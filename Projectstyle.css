@@ -1,0 +1,323 @@
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, h3{
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+header h1 {
+    text-align: center;
+    color: #fff;
+    font-family: 'Open Sans', serif;
+    padding: 2%;
+    font-size: 3em;
+}
+
+header h3{
+    border-top:solid;
+    border-top-width:0.5px;
+    border-top-color:black;
+        text-align: center;
+        color: #fff;
+        font-family: 'Open Sans', serif;
+        padding: 2%;
+        font-size: 2em;
+}
+
+.game {
+    background-color:cornflowerblue;
+    font-weight:bold;
+    color: black;
+}
+
+.title {
+    background-color: coral;
+    color: black
+}
+
+body {
+    background-color: blanchedalmond;
+}
+
+#questions p {
+    cursor: pointer
+}
+
+#answer {
+    text-align: center;
+    font-weight: 700;
+    width: 80%;
+    margin: 0 auto
+}
+
+#answer h2 {
+    display: none
+}
+
+.mobile{
+    display:block;
+}
+
+.tab-desk{
+    display:none;
+}
+
+.text {
+    text-align: center;
+}
+
+main img{
+    max-width:50%;
+    display:block;
+    width: 600px;
+    height: 400px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.mobile{
+    display:block;
+}
+
+nav {
+    background-color: darkcyan;
+    color: black
+}
+
+nav ul{
+    list-style-type:none;
+    margin:0;
+    text-align:center;
+}
+
+nav li{
+    display:inline-block;
+    font-size:1.5em;
+    font-family:'Open Sans', serif;
+    font-weight:bold;
+}
+
+nav li a{
+    display:block;
+    color:#f6eee4;
+    padding-top:0.5em;
+    padding-bottom:0.5em;
+    padding-right:2em;
+    padding-left:2em;
+    text-decoration:none;
+}
+
+.tel-link{
+    background-color:#2a1f14;
+    padding:2%;
+    width:80%;
+    margin-top:0;
+    margin-bottom:0;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.round{
+    border-radius:6px;
+}
+
+main {
+    background-color:blanchedalmond;
+    padding:2%;
+    font-family: 'Open Sans', serif;
+}
+
+main p {
+    font-size: 1.25em;
+    text-align:center;
+}
+
+main h4 {
+    text-align:center;
+}
+
+main ul {
+    list-style:square;
+}
+
+.link {
+    color:#996633;
+    text-decoration:none;
+    font-weight:bold;
+    font-style:italic;
+}
+
+.action {
+    font-size:1.75em;
+    font-weight:bold;
+    text-align:center;
+}
+
+#contact {
+    text-align:center
+}
+
+.foot {
+    background-color: darkgray
+}
+
+footer{
+    text-align:center;
+    font-size:0.85em;
+    background-color: #2a1f14;
+    color:#f6eee4;
+    padding-top:1%;
+    padding-bottom:1%;
+    padding-left:0%;
+    padding-right:0%;
+}
+
+footer a {
+    color:#f3e6d8;
+    text-decoration:none;
+}
+
+nav li a:hover {
+    background-color:#f3e6d8;
+    color: #f3e6d8;
+}
+
+section {
+	margin-top:4%;
+	padding:3%;
+}
+
+article {
+	margin-top:1%;
+	padding:2%;
+}
+aside {
+	background-color:rgba(24,52,64,0.3);
+	padding:2%;
+	margin-top:1%;
+	margin-left:2%;
+	color:#183440;
+	box-shadow:4px 4px 10px #183440;
+}
+
+.grid {
+	display:grid;
+	grid-template-columns: auto;
+	grid-gap:20px;
+}
+
+figure{
+    background-color:#2a1f14;
+    padding: 4px;
+    margin: auto;
+    box-shadow:4px 4px 10px #183440;
+}
+
+  figcaption {
+    border: 2px #2a1f14 solid;
+    background-color: #f3e6d8;
+    color:#2a1f14;
+    padding: 2px;
+    text-align: center;
+  }
+
+.friend{
+    text-shadow:4px 4px 10px #183440;
+    text-align:center;
+    padding-top:40px;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 620px), print {
+    
+    /* Tablet Viewport: Style rules for nav area */
+    .tab-desk {
+        display:block;
+    }
+    .mobile {
+        display:none;
+    }
+
+    .form-grid {
+        display:grid;
+        grid-template-columns: auto auto;
+        grid-gap:20px;
+    }
+
+    nav li {
+        display: inline-block;
+        font-size:1.25em;
+        border-top:hidden;
+        padding:0.5em;
+    }
+    .grid {
+        display:grid;
+        grid-template-columns: auto auto;
+        grid-gap:20px;
+    }
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1000px), print {
+
+/* Desktop Viewport: Style rules for nav area*/
+
+nav li {
+    font-size:1.5em;
+}
+
+nav li a{
+    padding-top:0.5em;
+    padding-bottom:0.5em;
+    padding-left:1.5em;
+    padding-right:1.5em;
+}
+
+nav li a:hover {
+    color:#2a1f14;
+    background-color:#f6eee4;
+}
+form{
+    width: 70%;
+    margin: 0 auto;
+}
+/* Media Query for Desktop Viewport Main Content */
+
+#info ul {
+    margin-left:5%;
+}
+
+.grid {
+    display:grid;
+    grid-template-columns: auto auto auto;
+    grid-gap:20px;
+}
+
+}
+
+/* Media Query for Large Desktop Viewport */
+@media screen and (min-width: 1921px), print {
+    
+body {
+    background-image:linear-gradient(#f6eee4,#78593a);
+}
+
+.grid {
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap:20px;
+}
+
+#wrapper {
+    width:1920px;
+    margin-top:0;
+    margin-bottom:0;
+    margin-left:auto;
+    margin-right:auto;
+
+    main {
+        background-color:#f6eee4;
+    }
+}
+    
+}
